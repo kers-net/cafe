@@ -6,6 +6,7 @@ import { CafeComponent } from './cafe/cafe.component';
 import { CoffeeMachineComponent } from './coffee-machine/coffee-machine.component';
 import { EmployeeListComponent } from './employee-list/employee-list.component';
 import { EmployeeItemComponent } from './employee-item/employee-item.component';
+import { DatePipe } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { EmployeeItemComponent } from './employee-item/employee-item.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

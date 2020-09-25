@@ -1,4 +1,7 @@
 <p>cafe works!</p>
-
-<!-- <app-coffee-machine></app-coffee-machine> -->
-<app-employee-list></app-employee-list>
+<app-coffee-machine [receivedCoffeeCups]="numberOfCoffeeCups" (iNeedMoreCoffee)="refillCoffee($event)" (coffeeServed)="updateOrder()"></app-coffee-machine>
+<div class="orders">
+  <div *ngFor="let order of ordersServed" class="orderline" >
+    {{order}}
+  </div>
+</div>

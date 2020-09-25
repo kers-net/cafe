@@ -1,6 +1,5 @@
-import { SpawnSyncOptionsWithBufferEncoding } from 'child_process';
 
-export interface Employee{
+ export interface Employee{
   firstName: string;
   lastName: string;
   phone:string;
